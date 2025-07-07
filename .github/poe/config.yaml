@@ -1,0 +1,29 @@
+default_branch: main
+app:
+  pid: lols
+  orgId: 671ffd3ff1344c1f52599446
+versioning:
+  default_major: 0
+  default_minor: 0
+  default_patch: 0
+create_maintenance_branch: true
+release_trigger:
+  enabled: false
+  bump_major_token: bump-major
+channels:
+  - name: next
+    policies:
+      approvals:
+        enabled: false
+        required_approvers: ["*"]
+    release:
+      create_release: true
+      prerelease: true
+  - name: stable
+    policies:
+      approvals:
+        enabled: true
+        required_approvers: ["*"]
+    release:
+      create_release: true
+      prerelease: false
