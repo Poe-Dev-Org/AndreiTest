@@ -1,7 +1,7 @@
 default_branch: main
 app:
-  pid: lols
-  orgId: 671ffd3ff1344c1f52599446
+  pid: testingsdfasd
+  orgId: 686ba8415c85e3d1c706cb6a
 versioning:
   default_major: 0
   default_minor: 0
